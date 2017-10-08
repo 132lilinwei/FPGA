@@ -1,0 +1,18 @@
+module blinker (
+    input clk,    // clock
+    input rst,    // reset
+    output aa,  // output to LED
+    output bb,
+    output cc
+    
+  ) {
+ 
+  dff counter[28](.clk(clk), .rst(rst));  
+ 
+  always {
+    aa = counter.q[27];                            //iterate all combinations of the output using the most significant bits
+    bb = counter.q[26];
+    cc = counter.q[25];
+    counter.d = counter.q + 1;
+  }
+}

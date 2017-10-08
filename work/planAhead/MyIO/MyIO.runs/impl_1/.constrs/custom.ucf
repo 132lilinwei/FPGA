@@ -1,0 +1,14 @@
+NET "aout" LOC = P51;
+NET "aout" IOSTANDARD = LVTTL;
+NET "bout" LOC = P41;
+NET "bout" IOSTANDARD = LVTTL;
+NET "cout" LOC = P35;
+NET "cout" IOSTANDARD = LVTTL;
+NET "sin" LOC = P33;
+NET "sin" IOSTANDARD = LVTTL;
+NET "sin" PULLDOWN;
+NET "cin" LOC = P30;
+NET "cin" IOSTANDARD = LVTTL;
+NET "cin" PULLDOWN;
+
+
